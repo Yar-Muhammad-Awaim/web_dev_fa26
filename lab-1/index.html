@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Corner — Semantic Homepage</title>
+</head>
+<body>
+    <header>
+        <h1>Book Corner</h1>
+        <p>A small shop for your next good read.</p>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#featured">Featured books</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="featured">
+            <h2>Featured products</h2>
+            <article>
+                <h3>Pride and Prejudice</h3>
+                <p>Jane Austen's classic story of family, first impressions and love.</p>
+                <p>Rs. 850</p>
+            </article>
+            <article>
+                <h3>The Adventures of Sherlock Holmes</h3>
+                <p>Arthur Conan Doyle's collection of twelve detective stories.</p>
+                <p>Rs. 950</p>
+            </article>
+        </section>
+        <section id="categories">
+            <h2>Categories</h2>
+            <ul>
+                <li>Fiction</li>
+                <li>Mystery</li>
+                <li>Children's books</li>
+                <li>Adventure</li>
+            </ul>
+        </section>
+        <section id="newsletter">
+            <h2>Newsletter signup</h2>
+            <p>Get news about books and new arrivals.</p>
+            <form action="#newsletter" method="get">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <p>This is an HTML form exercise; subscriptions are not stored.</p>
+        </section>
+    </main>
+    <footer>
+        <!-- Three logical link columns; styling is not required for this lab. -->
+        <div>
+            <h2>Shop</h2>
+            <ul>
+                <li><a href="#featured">Featured books</a></li>
+                <li><a href="#categories">Browse categories</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Keep in touch</h2>
+            <ul>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="mailto:yarmuhammadawaim@gmail.com">Email us</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Useful links</h2>
+            <ul>
+                <li><a href="../assignment-1/index.html">About the student</a></li>
+                <li><a href="https://www.gutenberg.org/">Project Gutenberg</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2026 Book Corner — Web Technologies Lab 1.</p>
+    </footer>
+</body>
+</html>
