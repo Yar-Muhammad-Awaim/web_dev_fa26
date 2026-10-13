@@ -1,0 +1,36 @@
+/* Tailwind handles layout and utilities; these rules preserve the bookstore theme. */
+body { color: #283831; background: #faf9f6; }
+.site-header { background: #fff; border-bottom: 1px solid #deded5; }
+.site-nav { padding-top: 1rem; padding-bottom: 1rem; gap: 1rem; }
+.brand { color: #284d3e; font-family: Georgia, serif; font-size: 1.6rem; }
+.brand span { display: block; font: 0.65rem Arial, sans-serif; letter-spacing: 0.14rem; }
+.menu-panel { display: none; order: 4; flex-basis: 100%; }
+.menu-toggle:checked ~ .menu-panel { display: flex; }
+.menu-toggle:focus-visible + label { outline: 3px solid #35664c; outline-offset: 3px; }
+.menu-button { margin-left: auto; cursor: pointer; }
+.cart { white-space: nowrap; }
+.cart span { background: #e9eee8; border-radius: 50%; padding: 0.2rem 0.5rem; }
+.intro { padding: 3rem 0 2rem; max-width: 650px; }
+.eyebrow { color: #5d6f5e; font-size: 0.75rem; letter-spacing: 0.12rem; }
+h1, h2, h3 { font-family: Georgia, serif; }
+h1 { font-size: 2.6rem; }
+h2 { font-size: 1.6rem; margin-bottom: 1.5rem; }
+h3.book-title { font-size: 1.2rem; }
+.book-card { border-color: #deded5; overflow: hidden; }
+.cover-image { height: 230px; object-fit: contain; background: #f0eee7; padding: 1.2rem; }
+.book-content p { color: #626b65; margin-bottom: 0.5rem; }
+.book-content .price { color: #284d3e; font-weight: bold; }
+footer { border-top: 1px solid #deded5; margin-top: 3rem; padding-top: 1.5rem; padding-bottom: 1rem; font-size: 0.85rem; }
+@media (min-width: 768px) {
+    .brand { flex: 1; margin-right: 0; }
+    .menu-panel { display: flex; flex: 1; order: 0; justify-content: center; }
+    .cart { flex: 1; text-align: right; }
+}
+
+/* Restore the document typography reset by Tailwind Preflight. */
+body { font-family: Arial, sans-serif; line-height: 1.5; }
+p, dl { margin-bottom: 1rem; }
+h1, h2, h3 { font-weight: 500; line-height: 1.2; margin-bottom: 0.5rem; }
+.brand { text-decoration: none; }
+.menu-link { color: #3e4b42; }
+.crumb + .crumb::before { content: "/"; margin-right: 0.5rem; color: #687064; }

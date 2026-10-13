@@ -1,0 +1,8 @@
+@import "tailwindcss" source(none);
+@source "./lab-2/index.html";
+@source "./assignment-2/index.html";
+@source "./assignment-2/product.html";
+
+@theme {
+  --breakpoint-lg: 62rem;
+}

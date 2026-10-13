@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Corner — Responsive Layout Lab</title>
+    <link rel="stylesheet" href="../tailwind.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="mx-auto w-full max-w-[1140px] px-3 site-nav flex flex-wrap items-center justify-between">
+            <a class="brand" href="index.html">Book Corner<span>THE READING SHOP</span></a>
+            <input class="sr-only menu-toggle" type="checkbox" id="menu-toggle" aria-controls="main-menu">
+            <label class="menu-button md:hidden rounded border border-[#deded5] px-3 py-2" for="menu-toggle"><span aria-hidden="true">&#9776;</span><span class="sr-only">Toggle navigation</span></label>
+            <nav class="menu-panel" id="main-menu" aria-label="Main navigation">
+                <ul class="flex w-full flex-col list-none p-0 m-0 md:flex-row md:w-auto">
+                    <li class=""><a class="menu-link block px-2 py-2 no-underline" aria-current="page" href="index.html">Home</a></li>
+                    <li class=""><a class="menu-link block px-2 py-2 no-underline" href="#products">Books</a></li>
+                    <li class=""><a class="menu-link block px-2 py-2 no-underline" href="#about">About</a></li>
+                    <li class=""><a class="menu-link block px-2 py-2 no-underline" href="mailto:yarmuhammadawaim@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+            <span class="cart" aria-label="Shopping cart, zero items">&#128722; <span>0</span></span>
+        </div>
+    </header>
+    <main class="mx-auto w-full max-w-[1140px] px-3">
+        <section class="intro" id="about">
+            <p class="eyebrow">A LITTLE SOMETHING FOR YOUR SHELF</p>
+            <h1>Find your next read.</h1>
+            <p>A small selection of classics, adventures and stories to get lost in.</p>
+        </section>
+        <section id="products" aria-labelledby="products-title">
+            <h2 id="products-title">On the bookshelf</h2>
+            <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12 md:col-span-6 lg:col-span-3"><article class="book-card flex flex-col bg-white border border-[#deded5] rounded overflow-hidden h-full"><img src="images/fiction.svg" class="cover-image w-full" alt="Fiction book placeholder cover" width="300" height="360"><div class="book-content flex-auto p-4"><h3 class="book-title mb-2">A quiet afternoon</h3><p>Fiction</p><p class="price">Rs. 850</p></div></article></div>
+                <div class="col-span-12 md:col-span-6 lg:col-span-3"><article class="book-card flex flex-col bg-white border border-[#deded5] rounded overflow-hidden h-full"><img src="images/adventure.svg" class="cover-image w-full" alt="Adventure book placeholder cover" width="300" height="360"><div class="book-content flex-auto p-4"><h3 class="book-title mb-2">Beyond the hills</h3><p>Adventure</p><p class="price">Rs. 950</p></div></article></div>
+                <div class="col-span-12 md:col-span-6 lg:col-span-3"><article class="book-card flex flex-col bg-white border border-[#deded5] rounded overflow-hidden h-full"><img src="images/mystery.svg" class="cover-image w-full" alt="Mystery book placeholder cover" width="300" height="360"><div class="book-content flex-auto p-4"><h3 class="book-title mb-2">The last clue</h3><p>Mystery</p><p class="price">Rs. 1,100</p></div></article></div>
+                <div class="col-span-12 md:col-span-6 lg:col-span-3"><article class="book-card flex flex-col bg-white border border-[#deded5] rounded overflow-hidden h-full"><img src="images/children.svg" class="cover-image w-full" alt="Children's book placeholder cover" width="300" height="360"><div class="book-content flex-auto p-4"><h3 class="book-title mb-2">A little wonder</h3><p>Children's books</p><p class="price">Rs. 650</p></div></article></div>
+            </div>
+        </section>
+    </main>
+    <footer class="mx-auto w-full max-w-[1140px] px-3"><p>&copy; 2026 Book Corner · Responsive navbar and grid exercise.</p></footer>
+</body>
+</html>
