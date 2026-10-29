@@ -130,3 +130,30 @@ a:focus-visible, summary:focus-visible, button:focus-visible { outline: 3px soli
 @media (min-width: 992px) {
     .menu-panel { order: 0; flex-basis: auto; }
 }
+
+/* Task 2: HTML validates the form; CSS only controls layout and feedback. */
+.checkout-main { padding-top: 2rem; padding-bottom: 3rem; }
+.checkout-main h1 { font-size: 2rem; }
+.checkout-form { display: grid; gap: 1.25rem; }
+.checkout-form fieldset { min-width: 0; padding: 1rem; border: 1px solid #deded5; background: white; }
+.checkout-form legend { padding: 0 0.4rem; font-size: 1.2rem; font-weight: bold; }
+.field-row { display: grid; gap: 0.4rem; margin-bottom: 1rem; }
+.field-row label { font-size: 0.9rem; padding-top: 0.5rem; }
+.field-row input, .field-row select {
+    width: 100%; min-width: 0; padding: 0.5rem; border: 1px solid #9baba0;
+    border-radius: 3px; background: white; font-size: 0.85rem;
+}
+.field-row input:focus, .field-row select:focus { outline: 2px solid var(--accent); }
+.field-row small { font-size: 0.75rem; }
+.field-error { display: none; color: #b42318; }
+.field-row input:user-invalid, .field-row select:user-invalid { border-color: #b42318; }
+.field-row input:user-invalid ~ .field-error,
+.field-row select:user-invalid ~ .field-error { display: block; }
+.checkout-submit {
+    grid-column: 1 / -1; width: 100%; background: var(--accent);
+    color: #183c29; border: 1px solid #315c43; cursor: pointer;
+}
+@media (min-width: 613px) {
+    .checkout-form { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .field-row { grid-template-columns: 5rem minmax(0, 1fr); gap: 0.6rem; }
+}
