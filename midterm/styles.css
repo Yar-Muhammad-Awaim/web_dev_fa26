@@ -157,3 +157,19 @@ a:focus-visible, summary:focus-visible, button:focus-visible { outline: 3px soli
     .checkout-form { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .field-row { grid-template-columns: 5rem minmax(0, 1fr); gap: 0.6rem; }
 }
+
+/* Task 3: a small panel anchored under the cart icon. */
+.cart-area { position: relative; align-self: center; }
+.mini-cart {
+    position: absolute; top: 100%; right: 0; z-index: 20;
+    width: min(320px, calc(100vw - 24px)); padding: 1rem;
+    background: white; border: 1px solid #deded5; border-top: 4px solid var(--accent);
+    box-shadow: 0 6px 12px #0003;
+}
+.mini-cart h2 { font-size: 1.2rem; }
+.mini-cart ul { list-style: none; margin: 0 0 1rem; padding: 0; max-height: 220px; overflow-y: auto; }
+.mini-cart li { display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; padding: 0.6rem 0; border-bottom: 1px solid #deded5; font-size: 0.85rem; }
+.mini-cart li span { min-width: 0; overflow-wrap: anywhere; }
+.mini-cart button { flex-shrink: 0; border: 1px solid #315c43; border-radius: 3px; padding: 0.25rem 0.4rem; cursor: pointer; }
+.cart-total { font-weight: bold; }
+.book-card button:disabled { opacity: 0.6; cursor: not-allowed; }

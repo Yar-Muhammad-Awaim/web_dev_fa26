@@ -6,6 +6,7 @@
     <title>Classic books, new discoveries — Book Corner</title>
     <link rel="stylesheet" href="../tailwind.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="top-note">A good book. A quiet corner. A little time for yourself.</div>
@@ -101,7 +102,15 @@
                     <li class=""><a class="menu-link block px-2 py-2 no-underline" href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <a class="cart" href="checkout.html" aria-label="Go to checkout">&#128722; <span>0</span></a>
+            <div class="cart-area">
+                <a class="cart" id="cart-toggle" href="checkout.html" aria-label="Shopping cart" aria-controls="mini-cart" aria-expanded="false">&#128722; <span id="cart-count" aria-live="polite">0</span></a>
+                <section class="mini-cart" id="mini-cart" aria-labelledby="mini-cart-title" hidden>
+                    <h2 id="mini-cart-title">Your cart</h2>
+                    <ul id="cart-items"><li>Your cart is empty.</li></ul>
+                    <p class="cart-total">Total: Rs. <span id="cart-total">0</span></p>
+                    <a href="checkout.html">Go to checkout &rarr;</a>
+                </section>
+            </div>
         </div>
     </header>
     <main class="mx-auto w-full max-w-[1140px] px-3">
@@ -112,7 +121,7 @@
         <section class="category-strip" id="categories" aria-label="Book categories"><h2>On our shelves</h2><ul><li>Fiction</li><li>Mystery</li><li>Adventure</li><li>Children’s books</li></ul></section>
         <section id="books" aria-labelledby="books-title">
             <div class="section-heading"><div><p class="eyebrow">PICK YOUR NEXT READ</p><h2 id="books-title">The classics shelf</h2></div><p>8 books to discover</p></div>
-            <p class="demo-note" id="cart-note">This is our static catalogue. Cart buttons will work in a later assignment.</p>
+            <p class="demo-note" id="cart-note">Add up to 3 copies of each book. Open the cart to review or remove items. The cart resets when you reload.</p>
             <div class="grid grid-cols-12 gap-6">
                 <div class="col-span-12 md:col-span-6 lg:col-span-3">
                     <article class="book-card flex flex-col bg-white border border-[#deded5] rounded overflow-hidden h-full">
