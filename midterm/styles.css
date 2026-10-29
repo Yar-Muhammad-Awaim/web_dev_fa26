@@ -90,3 +90,43 @@ h1, h2, h3 { font-weight: 500; line-height: 1.2; margin-bottom: 0.5rem; }
 .brand { text-decoration: none; }
 .menu-link { color: #3e4b42; }
 .crumb + .crumb::before { content: "/"; margin-right: 0.5rem; color: #687064; }
+
+/* Task 1. N = 13, BP = 613px, H = 91 degrees, K = 4 columns. */
+:root { --accent: hsl(91, 70%, 45%); }
+.site-header { position: relative; z-index: 1000; }
+main { position: relative; z-index: 0; }
+.site-nav { padding-top: 0; padding-bottom: 0; gap: 0 1rem; }
+.brand { padding: 1rem 0; }
+.menu-button { display: block; }
+.menu-panel { display: none; margin-right: 0; }
+.main-links { flex-direction: column; width: 100%; }
+.mega-menu { display: none; }
+.mega-trigger { display: block; padding: 0.6rem 0.5rem; text-decoration: none; }
+.category-accordion { padding: 0 0.5rem 1rem; }
+.category-accordion details { border-bottom: 1px solid #deded5; }
+.category-accordion summary { padding: 0.6rem; cursor: pointer; }
+.category-accordion ul, .mega-menu ul { list-style: none; padding: 0; margin: 0; }
+.category-accordion li a, .mega-menu li a { display: block; padding: 0.35rem 0; font-size: 0.85rem; }
+.category-accordion ul { padding: 0 1rem 0.6rem; }
+a:focus-visible, summary:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+@media (min-width: 613px) {
+    .menu-button, .menu-toggle, .category-accordion { display: none; }
+    .menu-panel { display: flex; order: 4; flex-basis: 100%; align-self: stretch; }
+    .main-links { flex-direction: row; width: auto; align-items: stretch; }
+    .main-links > li { display: flex; align-items: stretch; }
+    .main-links .menu-link { display: flex; align-items: center; padding: 1rem 0.5rem; }
+    .mega-menu {
+        position: absolute; top: 100%; left: 0; width: 100%; z-index: 30;
+        grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem;
+        padding: 1.25rem; background: white; border-top: 4px solid var(--accent);
+        box-shadow: 0 6px 12px #0003;
+    }
+    .mega-menu h2 { font-size: 1rem; }
+    .category-menu:hover .mega-menu,
+    .category-menu:focus-within .mega-menu { display: grid; }
+}
+
+@media (min-width: 992px) {
+    .menu-panel { order: 0; flex-basis: auto; }
+}

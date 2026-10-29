@@ -15,10 +15,89 @@
             <input class="sr-only menu-toggle" type="checkbox" id="menu-toggle" aria-controls="main-menu">
             <label class="menu-button md:hidden rounded border border-[#deded5] px-3 py-2" for="menu-toggle"><span aria-hidden="true">&#9776;</span><span class="sr-only">Toggle navigation</span></label>
             <nav class="menu-panel" id="main-menu" aria-label="Main navigation">
-                <ul class="flex w-full flex-col list-none p-0 m-0 md:flex-row md:w-auto">
+                <ul class="main-links flex w-full flex-col list-none p-0 m-0 md:flex-row md:w-auto">
                     <li class=""><a class="menu-link block px-2 py-2 no-underline" href="index.html">Home</a></li>
                     <li class=""><a class="menu-link block px-2 py-2 no-underline" href="index.html#books">Books</a></li>
-                    <li class=""><a class="menu-link block px-2 py-2 no-underline" href="index.html#categories">Categories</a></li>
+                    <!-- Task 1: desktop hover/focus menu; mobile native accordions. -->
+                    <li class="category-menu">
+                        <a class="menu-link mega-trigger" href="index.html#categories">Shop by Category</a>
+                        <div class="mega-menu" aria-label="Shop by Category">
+                            <section>
+                                <h2>Fiction</h2>
+                                <ul>
+                                    <li><a href="index.html#books">Classic fiction</a></li>
+                                    <li><a href="index.html#books">Family stories</a></li>
+                                    <li><a href="index.html#books">Romance</a></li>
+                                    <li><a href="index.html#books">Literary fiction</a></li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>Mystery</h2>
+                                <ul>
+                                    <li><a href="index.html#books">Detective stories</a></li>
+                                    <li><a href="index.html#books">Sherlock Holmes</a></li>
+                                    <li><a href="index.html#books">Gothic fiction</a></li>
+                                    <li><a href="index.html#books">Suspense</a></li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>Adventure</h2>
+                                <ul>
+                                    <li><a href="index.html#books">Sea adventures</a></li>
+                                    <li><a href="index.html#books">Treasure hunts</a></li>
+                                    <li><a href="index.html#books">Island stories</a></li>
+                                    <li><a href="index.html#books">Voyages</a></li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h2>Children’s books</h2>
+                                <ul>
+                                    <li><a href="index.html#books">Wonderland</a></li>
+                                    <li><a href="index.html#books">Garden stories</a></li>
+                                    <li><a href="index.html#books">Young readers</a></li>
+                                    <li><a href="index.html#books">Fairy tales</a></li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="category-accordion">
+                            <details>
+                                <summary>Fiction</summary>
+                                <ul>
+                                    <li><a href="index.html#books">Classic fiction</a></li>
+                                    <li><a href="index.html#books">Family stories</a></li>
+                                    <li><a href="index.html#books">Romance</a></li>
+                                    <li><a href="index.html#books">Literary fiction</a></li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary>Mystery</summary>
+                                <ul>
+                                    <li><a href="index.html#books">Detective stories</a></li>
+                                    <li><a href="index.html#books">Sherlock Holmes</a></li>
+                                    <li><a href="index.html#books">Gothic fiction</a></li>
+                                    <li><a href="index.html#books">Suspense</a></li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary>Adventure</summary>
+                                <ul>
+                                    <li><a href="index.html#books">Sea adventures</a></li>
+                                    <li><a href="index.html#books">Treasure hunts</a></li>
+                                    <li><a href="index.html#books">Island stories</a></li>
+                                    <li><a href="index.html#books">Voyages</a></li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary>Children’s books</summary>
+                                <ul>
+                                    <li><a href="index.html#books">Wonderland</a></li>
+                                    <li><a href="index.html#books">Garden stories</a></li>
+                                    <li><a href="index.html#books">Young readers</a></li>
+                                    <li><a href="index.html#books">Fairy tales</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                    </li>
                     <li class=""><a class="menu-link block px-2 py-2 no-underline" href="#contact">Contact</a></li>
                 </ul>
             </nav>
