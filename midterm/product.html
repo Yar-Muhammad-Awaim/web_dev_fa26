@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pride and Prejudice — Book Corner</title>
+    <link rel="stylesheet" href="../tailwind.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-note">A good book. A quiet corner. A little time for yourself.</div>
+    <header class="site-header">
+        <div class="mx-auto w-full max-w-[1140px] px-3 site-nav flex flex-wrap items-center justify-between">
+            <a class="brand" href="index.html">Book Corner<span>YOUR NEIGHBOURHOOD BOOKSHELF</span></a>
+            <input class="sr-only menu-toggle" type="checkbox" id="menu-toggle" aria-controls="main-menu">
+            <label class="menu-button md:hidden rounded border border-[#deded5] px-3 py-2" for="menu-toggle"><span aria-hidden="true">&#9776;</span><span class="sr-only">Toggle navigation</span></label>
+            <nav class="menu-panel" id="main-menu" aria-label="Main navigation">
+                <ul class="flex w-full flex-col list-none p-0 m-0 md:flex-row md:w-auto">
+                    <li class=""><a class="menu-link block px-2 py-2 no-underline" href="index.html">Home</a></li>
+                    <li class=""><a class="menu-link block px-2 py-2 no-underline" href="index.html#books">Books</a></li>
+                    <li class=""><a class="menu-link block px-2 py-2 no-underline" href="index.html#categories">Categories</a></li>
+                    <li class=""><a class="menu-link block px-2 py-2 no-underline" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <span class="cart" role="img" aria-label="Shopping cart, zero items">&#128722; <span>0</span></span>
+        </div>
+    </header>
+    <main class="mx-auto w-full max-w-[1140px] px-3 product-main">
+        <nav aria-label="Breadcrumb"><ol class="breadcrumbs flex flex-wrap list-none p-0 gap-2"><li class="crumb"><a href="index.html">Home</a></li><li class="crumb"><a href="index.html#books">Books</a></li><li class="crumb" aria-current="page">Pride and Prejudice</li></ol></nav>
+        <article class="grid grid-cols-12 gap-6 lg:gap-12 product-detail">
+            <div class="col-span-12 md:col-span-5"><div class="product-image"><img src="images/pride-prejudice.jpg" alt="Pride and Prejudice by Jane Austen, book cover" width="300" height="440"></div></div>
+            <div class="col-span-12 md:col-span-7">
+                <p class="eyebrow">FICTION · CLASSICS</p>
+                <h1>Pride and Prejudice</h1>
+                <p class="product-author">by Jane Austen</p>
+                <p class="availability">In stock</p>
+                <p class="product-price">Rs. 850</p>
+                <p>Elizabeth Bennet values her independence and her judgement. When she meets the reserved Mr Darcy, neither makes a good first impression. As their families and friends cross paths, both discover how easily pride and prejudice can get in the way of understanding someone.</p>
+                <p>A warm, witty classic about family, love and learning to look beyond first impressions.</p>
+                <dl class="book-facts"><dt>Format</dt><dd>Paperback</dd><dt>Language</dt><dd>English</dd><dt>Category</dt><dd>Classic fiction</dd></dl>
+                <div class="purchase"><div><label for="quantity" class="quantity-label block mb-2">Quantity</label><input class="rounded border border-[#ced4da] bg-white px-3 py-1.5" type="number" id="quantity" name="quantity" min="1" max="10" value="1"></div><button class="button inline-block text-center no-underline border transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 button-solid bg-[#315c43] border-[#315c43] text-white hover:bg-[#244630]" type="button" aria-describedby="cart-note">Add to Cart</button></div>
+                <p class="demo-note" id="cart-note">Static coursework demo: cart and checkout are not active yet.</p>
+                <a class="back-link" href="index.html#books">&larr; Back to all books</a>
+            </div>
+        </article>
+    </main>
+    <footer id="contact">
+        <div class="mx-auto w-full max-w-[1140px] px-3">
+            <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12 md:col-span-6"><h2 class="footer-brand">Book Corner</h2><p>A small collection of stories worth making time for.</p><p>A student storefront built for Web Technologies.</p></div>
+                <div class="col-span-6 md:col-span-3"><h2>Explore</h2><ul><li><a href="index.html">Home</a></li><li><a href="index.html#books">All books</a></li><li><a href="index.html#categories">Categories</a></li></ul></div>
+                <div class="col-span-6 md:col-span-3"><h2>Get in touch</h2><ul><li><a href="mailto:yarmuhammadawaim@gmail.com">Email us</a></li><li><a href="../assignment-1/index.html">About the student</a></li></ul><p class="text-sm">Static coursework demo. Orders are not accepted yet.</p></div>
+            </div>
+            <p class="copyright">&copy; 2026 Book Corner · CSC336 Assignment 2</p>
+        </div>
+    </footer>
+</body>
+</html>

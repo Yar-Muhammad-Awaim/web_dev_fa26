@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic books, new discoveries — Book Corner</title>
+    <link rel="stylesheet" href="../tailwind.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-note">A good book. A quiet corner. A little time for yourself.</div>
+    <header class="site-header">
+        <div class="mx-auto w-full max-w-[1140px] px-3 site-nav flex flex-wrap items-center justify-between">
+            <a class="brand" href="index.html">Book Corner<span>YOUR NEIGHBOURHOOD BOOKSHELF</span></a>
+            <input class="sr-only menu-toggle" type="checkbox" id="menu-toggle" aria-controls="main-menu">
+            <label class="menu-button md:hidden rounded border border-[#deded5] px-3 py-2" for="menu-toggle"><span aria-hidden="true">&#9776;</span><span class="sr-only">Toggle navigation</span></label>
+            <nav class="menu-panel" id="main-menu" aria-label="Main navigation">
+                <ul class="flex w-full flex-col list-none p-0 m-0 md:flex-row md:w-auto">
+                    <li class=""><a class="menu-link block px-2 py-2 no-underline" href="index.html">Home</a></li>
+                    <li class=""><a class="menu-link block px-2 py-2 no-underline" href="index.html#books">Books</a></li>
+                    <li class=""><a class="menu-link block px-2 py-2 no-underline" href="index.html#categories">Categories</a></li>
+                    <li class=""><a class="menu-link block px-2 py-2 no-underline" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <span class="cart" role="img" aria-label="Shopping cart, zero items">&#128722; <span>0</span></span>
+        </div>
+    </header>
+    <main class="mx-auto w-full max-w-[1140px] px-3">
+        <section class="hero" aria-labelledby="hero-title">
+            <div><p class="eyebrow">FOR THE LOVE OF READING</p><h1 id="hero-title">Your next chapter<br>starts here.</h1><p>Old favourites, curious adventures and timeless stories.<br class="hidden md:block"> Find a little space on your shelf for something good.</p><a class="button inline-block text-center no-underline border transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 button-solid bg-[#315c43] border-[#315c43] text-white hover:bg-[#244630]" href="#books">Browse the collection &rarr;</a></div>
+            <div class="hero-books" aria-hidden="true"><img src="images/pride-prejudice.jpg" alt="" width="180" height="260"><img src="images/treasure-island.jpg" alt="" width="180" height="260"></div>
+        </section>
+        <section class="category-strip" id="categories" aria-label="Book categories"><h2>On our shelves</h2><ul><li>Fiction</li><li>Mystery</li><li>Adventure</li><li>Children’s books</li></ul></section>
+        <section id="books" aria-labelledby="books-title">
+            <div class="section-heading"><div><p class="eyebrow">PICK YOUR NEXT READ</p><h2 id="books-title">The classics shelf</h2></div><p>8 books to discover</p></div>
+            <p class="demo-note" id="cart-note">This is our static catalogue. Cart buttons will work in a later assignment.</p>
+            <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12 md:col-span-6 lg:col-span-3">
+                    <article class="book-card flex flex-col bg-white border border-[#deded5] rounded overflow-hidden h-full">
+                        <div class="book-image"><img src="images/pride-prejudice.jpg" alt="Pride and Prejudice book cover" width="180" height="260"></div>
+                        <div class="book-content flex-auto p-4 flex flex-col">
+                            <p class="book-category">Fiction</p>
+                            <h3 class="book-title mb-2"><a href="product.html">Pride and Prejudice</a></h3>
+                            <p class="author">Jane Austen</p>
+                            <p class="price mt-auto">Rs. 850</p>
+                            <button class="button inline-block text-center no-underline border transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 button-outline border-[#315c43] text-[#315c43] hover:bg-[#315c43] hover:text-white" type="button" aria-describedby="cart-note">Add to Cart</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-span-12 md:col-span-6 lg:col-span-3">
+                    <article class="book-card flex flex-col bg-white border border-[#deded5] rounded overflow-hidden h-full">
+                        <div class="book-image"><img src="images/sherlock-holmes.jpg" alt="The Adventures of Sherlock Holmes book cover" width="180" height="260"></div>
+                        <div class="book-content flex-auto p-4 flex flex-col">
+                            <p class="book-category">Mystery</p>
+                            <h3 class="book-title mb-2">The Adventures of Sherlock Holmes</h3>
+                            <p class="author">Arthur Conan Doyle</p>
+                            <p class="price mt-auto">Rs. 950</p>
+                            <button class="button inline-block text-center no-underline border transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 button-outline border-[#315c43] text-[#315c43] hover:bg-[#315c43] hover:text-white" type="button" aria-describedby="cart-note">Add to Cart</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-span-12 md:col-span-6 lg:col-span-3">
+                    <article class="book-card flex flex-col bg-white border border-[#deded5] rounded overflow-hidden h-full">
+                        <div class="book-image"><img src="images/alice-wonderland.jpg" alt="Alice’s Adventures in Wonderland book cover" width="180" height="260"></div>
+                        <div class="book-content flex-auto p-4 flex flex-col">
+                            <p class="book-category">Children’s books</p>
+                            <h3 class="book-title mb-2">Alice’s Adventures in Wonderland</h3>
+                            <p class="author">Lewis Carroll</p>
+                            <p class="price mt-auto">Rs. 650</p>
+                            <button class="button inline-block text-center no-underline border transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 button-outline border-[#315c43] text-[#315c43] hover:bg-[#315c43] hover:text-white" type="button" aria-describedby="cart-note">Add to Cart</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-span-12 md:col-span-6 lg:col-span-3">
+                    <article class="book-card flex flex-col bg-white border border-[#deded5] rounded overflow-hidden h-full">
+                        <div class="book-image"><img src="images/treasure-island.jpg" alt="Treasure Island book cover" width="180" height="260"></div>
+                        <div class="book-content flex-auto p-4 flex flex-col">
+                            <p class="book-category">Adventure</p>
+                            <h3 class="book-title mb-2">Treasure Island</h3>
+                            <p class="author">Robert Louis Stevenson</p>
+                            <p class="price mt-auto">Rs. 750</p>
+                            <button class="button inline-block text-center no-underline border transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 button-outline border-[#315c43] text-[#315c43] hover:bg-[#315c43] hover:text-white" type="button" aria-describedby="cart-note">Add to Cart</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-span-12 md:col-span-6 lg:col-span-3">
+                    <article class="book-card flex flex-col bg-white border border-[#deded5] rounded overflow-hidden h-full">
+                        <div class="book-image"><img src="images/little-women.jpg" alt="Little Women book cover" width="180" height="260"></div>
+                        <div class="book-content flex-auto p-4 flex flex-col">
+                            <p class="book-category">Fiction</p>
+                            <h3 class="book-title mb-2">Little Women</h3>
+                            <p class="author">Louisa May Alcott</p>
+                            <p class="price mt-auto">Rs. 990</p>
+                            <button class="button inline-block text-center no-underline border transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 button-outline border-[#315c43] text-[#315c43] hover:bg-[#315c43] hover:text-white" type="button" aria-describedby="cart-note">Add to Cart</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-span-12 md:col-span-6 lg:col-span-3">
+                    <article class="book-card flex flex-col bg-white border border-[#deded5] rounded overflow-hidden h-full">
+                        <div class="book-image"><img src="images/frankenstein.jpg" alt="Frankenstein book cover" width="180" height="260"></div>
+                        <div class="book-content flex-auto p-4 flex flex-col">
+                            <p class="book-category">Fiction</p>
+                            <h3 class="book-title mb-2">Frankenstein</h3>
+                            <p class="author">Mary Shelley</p>
+                            <p class="price mt-auto">Rs. 890</p>
+                            <button class="button inline-block text-center no-underline border transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 button-outline border-[#315c43] text-[#315c43] hover:bg-[#315c43] hover:text-white" type="button" aria-describedby="cart-note">Add to Cart</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-span-12 md:col-span-6 lg:col-span-3">
+                    <article class="book-card flex flex-col bg-white border border-[#deded5] rounded overflow-hidden h-full">
+                        <div class="book-image"><img src="images/moby-dick.jpg" alt="Moby-Dick book cover" width="180" height="260"></div>
+                        <div class="book-content flex-auto p-4 flex flex-col">
+                            <p class="book-category">Adventure</p>
+                            <h3 class="book-title mb-2">Moby-Dick</h3>
+                            <p class="author">Herman Melville</p>
+                            <p class="price mt-auto">Rs. 1,250</p>
+                            <button class="button inline-block text-center no-underline border transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 button-outline border-[#315c43] text-[#315c43] hover:bg-[#315c43] hover:text-white" type="button" aria-describedby="cart-note">Add to Cart</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-span-12 md:col-span-6 lg:col-span-3">
+                    <article class="book-card flex flex-col bg-white border border-[#deded5] rounded overflow-hidden h-full">
+                        <div class="book-image"><img src="images/secret-garden.jpg" alt="The Secret Garden book cover" width="180" height="260"></div>
+                        <div class="book-content flex-auto p-4 flex flex-col">
+                            <p class="book-category">Children’s books</p>
+                            <h3 class="book-title mb-2">The Secret Garden</h3>
+                            <p class="author">Frances Hodgson Burnett</p>
+                            <p class="price mt-auto">Rs. 790</p>
+                            <button class="button inline-block text-center no-underline border transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 button-outline border-[#315c43] text-[#315c43] hover:bg-[#315c43] hover:text-white" type="button" aria-describedby="cart-note">Add to Cart</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <aside class="shelf-note"><h2>Some stories stay with you.</h2><p>Start with a classic. There is always something new to find in an old favourite.</p></aside>
+    </main>
+    <footer id="contact">
+        <div class="mx-auto w-full max-w-[1140px] px-3">
+            <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12 md:col-span-6"><h2 class="footer-brand">Book Corner</h2><p>A small collection of stories worth making time for.</p><p>A student storefront built for Web Technologies.</p></div>
+                <div class="col-span-6 md:col-span-3"><h2>Explore</h2><ul><li><a href="index.html">Home</a></li><li><a href="index.html#books">All books</a></li><li><a href="index.html#categories">Categories</a></li></ul></div>
+                <div class="col-span-6 md:col-span-3"><h2>Get in touch</h2><ul><li><a href="mailto:yarmuhammadawaim@gmail.com">Email us</a></li><li><a href="../assignment-1/index.html">About the student</a></li></ul><p class="text-sm">Static coursework demo. Orders are not accepted yet.</p></div>
+            </div>
+            <p class="copyright">&copy; 2026 Book Corner · CSC336 Assignment 2</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+/* Tailwind handles layout and utilities; these rules preserve the bookstore theme. */
+body { color: #293b31; background: #fcfbf8; }
+a { color: #315f47; }
+a:hover { color: #183c29; }
+.top-note { background: #294b3b; color: #fff; text-align: center; padding: 0.55rem 1rem; font-size: 0.8rem; }
+.site-header { background: white; border-bottom: 1px solid #e3e3da; }
+.site-nav { padding-top: 1.25rem; padding-bottom: 1.25rem; gap: 1rem; }
+.brand { color: #294b3b; font-family: Georgia, serif; font-size: 1.7rem; }
+.brand span { display: block; font: 0.6rem Arial, sans-serif; letter-spacing: 0.12rem; }
+.menu-panel { display: none; order: 4; flex-basis: 100%; }
+.menu-toggle:checked ~ .menu-panel { display: flex; }
+.menu-toggle:focus-visible + label { outline: 3px solid #35664c; outline-offset: 3px; }
+.menu-button { margin-left: auto; cursor: pointer; }
+.menu-link { color: #3e4b42; font-size: 0.9rem; }
+.cart { white-space: nowrap; }
+.cart span { padding: 0.2rem 0.5rem; border-radius: 50%; background: #edf0e8; }
+h1, h2, h3 { font-family: Georgia, serif; }
+.hero { margin-top: 1.5rem; padding: 2rem 1.4rem; background: #eeeee2; border-radius: 4px; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+.eyebrow { color: #526b50; font-size: 0.7rem; letter-spacing: 0.12rem; margin-bottom: 0.7rem; }
+.hero h1 { font-size: 2.5rem; line-height: 1.1; margin-bottom: 1rem; }
+.hero p:not(.eyebrow) { color: #586257; line-height: 1.7; }
+.hero-books { display: none; gap: 1rem; }
+.hero-books img { width: 125px; height: 185px; object-fit: contain; box-shadow: 3px 5px 9px #0002; }
+.button { border-radius: 3px; padding: 0.65rem 1rem; font-size: 0.85rem; }
+.button-solid { background: #315c43; border-color: #315c43; color: #fff; }
+.button-solid:hover { background: #244630; border-color: #244630; color: #fff; }
+.button-outline { border-color: #315c43; color: #315c43; }
+.button-outline:hover { color: #fff; background: #315c43; border-color: #315c43; }
+.category-strip { display: flex; flex-wrap: wrap; align-items: center; gap: 0.8rem 2rem; border-bottom: 1px solid #deded2; padding: 1.5rem 0; }
+.category-strip h2 { font: 0.85rem Arial, sans-serif; margin: 0; font-weight: bold; }
+.category-strip ul { display: flex; flex-wrap: wrap; list-style: none; padding: 0; margin: 0; gap: 0.5rem 1.2rem; font-size: 0.85rem; color: #626b60; }
+.section-heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 0.5rem; margin-top: 2.2rem; }
+.section-heading h2 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+.section-heading > p { color: #65705f; font-size: 0.8rem; }
+.demo-note { color: #687064; font-size: 0.8rem; margin-top: 1rem; margin-bottom: 1.25rem; }
+.book-card { border: 1px solid #e2e3da; border-radius: 3px; overflow: hidden; background: white; }
+.book-image { background: #f2f0e9; padding: 1.3rem; display: flex; justify-content: center; }
+.book-image img { height: 210px; width: 150px; object-fit: contain; }
+.book-content { padding: 1.2rem; }
+.book-category { color: #697961; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.06rem; margin-bottom: 0.5rem; }
+.book-title { font-size: 1.15rem; line-height: 1.3; }
+.book-title a { text-decoration: none; }
+.book-title a:hover { text-decoration: underline; }
+.author { color: #70766e; font-size: 0.8rem; }
+.price { color: #315c43; font-weight: bold; padding-top: 0.5rem; }
+.shelf-note { padding: 2rem 1rem; margin: 2.5rem 0; text-align: center; border-top: 1px solid #deded2; border-bottom: 1px solid #deded2; }
+.shelf-note h2 { font-size: 1.6rem; }
+.shelf-note p { font-size: 0.9rem; color: #65705f; margin-bottom: 0; }
+footer { background: #eeeee6; padding-top: 2.5rem; }
+footer h2 { font: bold 0.85rem Arial, sans-serif; }
+footer .footer-brand { font: 1.5rem Georgia, serif; }
+footer p, footer a { font-size: 0.8rem; line-height: 1.7; overflow-wrap: anywhere; }
+footer ul { list-style: none; padding: 0; line-height: 1.9; }
+footer a { text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+.copyright { border-top: 1px solid #d8dbcf; margin: 1.5rem 0 0; padding: 1.2rem 0; color: #626e5b; }
+.product-main { padding-top: 1.5rem; padding-bottom: 3rem; }
+.breadcrumbs { font-size: 0.8rem; margin-bottom: 2rem; }
+.product-image { background: #eeeee4; display: flex; justify-content: center; align-items: center; padding: 2rem; border: 1px solid #e2e3da; }
+.product-image img { width: 100%; max-width: 250px; height: 350px; object-fit: contain; }
+.product-detail h1 { font-size: 2.25rem; }
+.product-author { color: #687263; }
+.availability { color: #315c43; font-size: 0.8rem; }
+.product-price { font-size: 1.7rem; font-weight: bold; }
+.product-detail p { line-height: 1.75; }
+.book-facts { display: grid; grid-template-columns: 90px 1fr; font-size: 0.85rem; padding: 1rem 0; border-top: 1px solid #deded2; border-bottom: 1px solid #deded2; }
+.book-facts dd { margin-bottom: 0.5rem; }
+.purchase { display: flex; align-items: end; gap: 1rem; }
+.purchase input { width: 85px; }
+.purchase .button { min-height: 38px; }
+.quantity-label, .back-link { font-size: 0.85rem; }
+@media (min-width: 768px) {
+    .brand { margin-right: auto; }
+    .menu-panel { display: flex; order: 0; flex-basis: auto; flex-grow: 0; }
+    .hero { padding: 3rem 2.5rem; }
+    .hero h1 { font-size: 3.2rem; }
+    .hero-books { display: flex; }
+    .hero-books img:nth-child(2) { margin-top: 2rem; }
+    .product-image { min-height: 500px; }
+}
+@media (min-width: 992px) {
+    .menu-panel { margin-right: 3rem; }
+    .hero-books img { width: 155px; height: 230px; }
+}
+
+/* Restore the document typography reset by Tailwind Preflight. */
+body { font-family: Arial, sans-serif; line-height: 1.5; }
+p, dl { margin-bottom: 1rem; }
+h1, h2, h3 { font-weight: 500; line-height: 1.2; margin-bottom: 0.5rem; }
+.brand { text-decoration: none; }
+.menu-link { color: #3e4b42; }
+.crumb + .crumb::before { content: "/"; margin-right: 0.5rem; color: #687064; }
